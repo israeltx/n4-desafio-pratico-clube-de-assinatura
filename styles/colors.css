@@ -20,3 +20,7 @@
   --text-body: #E2E7E9;
   --text-label: #BAC6C9;
 }
+
+body {
+  background-color: var(--shape-background);
+}
