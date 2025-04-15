@@ -23,4 +23,7 @@
 
 body {
   background-color: var(--shape-background);
+  color: var(--text-body);
 }
+
+h1, h2, h3, h4 { color: var(--text-title); }

@@ -35,9 +35,25 @@
   --button: var(--fw-bold) var(--fs-14) var(--font-family);
   --link: var(--fw-medium) var(--fs-14) var(--font-family);
   --tag: var(--fw-bold) var(--fs-10) var(--font-family);
-
 }
 
+/* Headings */
+h1 { font: var(--title-lg); }
+h2 { font: var(--title-md); }
+h3 { font: var(--title-sm); }
+h4 { font: var(--title-xs); }
+h5 { font: var(--subtitle); }
+
+/* Body */
+.body-lg { font: var(--body-lg); }
+.body-md { font: var(--body-md); }
+.body-sm { font: var(--body-sm); }
+.body-xs { font: var(--body-xs); }
+
+/* Others */
+button { font: var(--button); }
+a { font: var(--link); }
+/* Tag */
 label {
   font: var(--tag);
   text-transform: uppercase;
