@@ -1,0 +1,6 @@
+:root {
+  /* Font Family */
+  /* Font Sizes */
+  /* Font Weights */
+  --h1: var(--fw-xbold) var(--fs-24)/1.32 var(--archivo-ff);
+}
