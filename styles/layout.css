@@ -14,9 +14,9 @@
 
 /* Utility Classes */
 .container {
-  max-width: ;
+  max-width: 375px;
   margin: auto;
-  padding:;
+  padding: 20px;
 }
 
 .desktop-only { display: none; }
