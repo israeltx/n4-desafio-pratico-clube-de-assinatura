@@ -1,3 +1,4 @@
 @media (width > 375px) {
   .desktop-only { display: initial; }
+  .mobile-only { display: none;}
 }
