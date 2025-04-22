@@ -37,6 +37,8 @@
   --tag: var(--fw-bold) var(--fs-10) var(--font-family);
 }
 
+body { font-family: var(--font-family); }
+
 /* Headings */
 h1 { font: var(--title-lg); }
 h2 { font: var(--title-md); }
