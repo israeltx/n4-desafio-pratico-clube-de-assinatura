@@ -4,11 +4,9 @@
 @import url(colors.css);
 
 /* Components */
+@import url(components/navigation.css);
 @import url(components/buttons.css);
 @import url(components/card.css);
-@import url(components/footer.css);
-@import url(components/form.css);
-@import url(components/input.css);
 @import url(components/links.css);
-@import url(components/navigation.css);
-@import url(components/text-area.css);
+@import url(components/footer.css);
+@import url(components/social-links.css);
