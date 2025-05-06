@@ -1,0 +1,9 @@
+li { list-style: none; }
+
+a {
+  font: var(--link);
+  color: var(--blue-light);
+  &:hover {
+    color: var(--text-body);
+  }
+}

@@ -54,7 +54,6 @@ h5 { font: var(--subtitle); }
 
 /* Others */
 button { font: var(--button); }
-a { font: var(--link); }
 /* Tag */
 label {
   font: var(--tag);
