@@ -1,0 +1,19 @@
+button {
+  padding: var(--s12) var(--s20);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--text-title);
+}
+.btn-primary {
+  background-color: var(--pink-dark);
+  &:hover {
+    background-color: var(--pink-base);
+  }
+}
+.btn-secondary {
+  background-color: var(--blue-dark);
+  &:hover {
+    background-color: var(--blue-mid);
+  }
+}
+
