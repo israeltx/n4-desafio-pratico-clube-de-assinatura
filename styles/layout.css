@@ -24,3 +24,9 @@
 
 .desktop-only { display: none; }
 .mobile-only { display: initial; }
+
+@media (width > 375px) {
+  .container {
+    max-width: 1440px;
+  }
+}
