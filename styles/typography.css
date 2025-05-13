@@ -27,7 +27,7 @@
 
   /* Body */
   --body-lg: var(--fw-regular) var(--fs-20)/1.4 var(--font-family);
-  --body-md: var(--fw-regular) var(--fs-16)/1.4 var(--font-family);
+  --body-md: var(--fw-medium) var(--fs-16)/1.4 var(--font-family);
   --body-sm: var(--fw-regular) var(--fs-14)/1.4 var(--font-family);
   --body-xs: var(--fw-regular) var(--fs-12)/1.4 var(--font-family);
 
@@ -40,11 +40,22 @@
 body { font-family: var(--font-family); }
 
 /* Headings */
-h1 { font: var(--title-lg); }
-h2 { font: var(--title-md); }
+h1, h2, h3, h4, h5, p {
+  text-align: center;
+}
+
+h1 { 
+  font: var(--title-lg);
+  font-size: 28px;
+}
+
+h2 { font: var(--title-md);
+  font-size: 24px; 
+}
 h3 { font: var(--body-sm); }
 span { font: var(--title-xs); }
 h5 { font: var(--subtitle); }
+
 
 /* Body */
 .body-lg { font: var(--body-lg); }
@@ -71,4 +82,16 @@ label {
   font: var(--tag-popular);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+@media (width > 375px) {
+  h1 { font: var(--title-lg); }
+  h2 { font: var(--title-sm); }
+
+  #hero p:nth-of-type(1) {
+    font: var(--body-lg);
+  }
+  #hero p:nth-of-type(2) {
+    font: var(--subtitle);
+  }
 }

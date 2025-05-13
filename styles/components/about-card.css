@@ -22,6 +22,15 @@ section#subscription {
     border: 1px solid transparent;
     background-color: var(--shape-stroke);
   }
+
+  & h2, h3 {
+    text-align: left;
+  }
+
+  & h2 {
+    font: var(--title-md)
+  }
+
 }
 
 /* Stars beside the list items */
