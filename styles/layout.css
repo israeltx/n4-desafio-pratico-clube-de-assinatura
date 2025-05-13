@@ -1,6 +1,7 @@
 :root {
   --s4: 0.25rem;
   --s8: 0.5rem;
+  --s9: 0.5625rem;
   --s10: 0.625rem;
   --s12: 0.75rem;
   --s14: 0.875rem;
@@ -11,6 +12,7 @@
   --s32: 2rem;
   --s40: 2.5rem;
   --s48: 3rem;
+  --s70: 4.375rem;
 }
 
 /* Utility Classes */
