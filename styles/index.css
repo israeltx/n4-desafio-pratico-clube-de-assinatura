@@ -5,6 +5,7 @@
 
 /* Components */
 @import url(components/navigation.css);
+@import url(components/hero.css);
 @import url(components/buttons.css);
 @import url(components/about-card.css);
 @import url(components/links.css);
