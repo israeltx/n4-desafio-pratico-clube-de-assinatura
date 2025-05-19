@@ -20,6 +20,10 @@ nav {
   .mobile-only { display: none;}
 
   nav {
+    margin-top: 42px;
+    margin-bottom: 135px;
+    padding-inline: 160px;
+    
     & img {
       width: 230px;
       height: 58px;

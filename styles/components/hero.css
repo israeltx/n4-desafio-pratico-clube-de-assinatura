@@ -4,7 +4,6 @@
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: 900px;
-  
 }
 
 #hero {
@@ -18,8 +17,13 @@
   #ad-copy {
     position: relative;
 
+    & span {
+      font-size: inherit;
+      font-weight: var(--fw-regular);
+    }
+
     & img {
-      max-width: 40px;
+      width: 40px;
       position: absolute;
 
       &[src*="spellbook"] {
@@ -34,10 +38,67 @@
       }
 
       &[src*="ouija"] {
-        max-width: 32px;
+        width: 32px;
         left: 0;
         rotate: -30deg;
         bottom: -30px;
+      }
+    }
+  }
+}
+
+@media (width > 375px) {
+  .background-hero {
+    background-size: 1950px;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & header {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 410px;
+
+      & h1 {
+        width: 656px;
+        margin-bottom: var(--s32);
+      }
+      
+      & p {
+        width: 568px;
+        font: var(--body-lg);
+      }
+    }
+    & #ad-copy {
+      & p {
+        width: 1240px;
+        font: var(--subtitle);
+      }
+      & span {
+        font-weight: var(--fw-bold);
+        color: var(--blue-light);
+      }
+
+      & img[src*="spellbook"] {
+        width: 80px;
+        right: 48%;
+        top: -90px;
+      }
+      & img[src*="crystal-ball"] {
+        width: 65px;
+        right: 25px;
+        rotate: -15deg;
+      }
+      & img[src*="ouija"] {
+        width: 73px;
+        left: 60px;
+        bottom: -75px;
+        rotate: 100deg;
       }
     }
   }
