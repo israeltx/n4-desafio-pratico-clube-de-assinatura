@@ -27,8 +27,11 @@ section#subscription {
     text-align: left;
   }
 
+
   & h2 {
-    font: var(--title-md)
+    font: var(--title-md);
+    margin-top: var(--s24);
+    margin-bottom:  var(--s8);
   }
 
 }
@@ -66,11 +69,6 @@ ul {
   position: absolute;
   right: 24px;
   top: 24px;
-}
-
-h2 {
-  margin-top: var(--s24);
-  margin-bottom:  var(--s8);
 }
 
 /* Icons above and under the cards */

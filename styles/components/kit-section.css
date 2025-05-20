@@ -1,0 +1,13 @@
+#kit {
+  & header {
+    display: flex;
+    justify-content: center;
+    gap: var(--s12);
+
+    /*  */
+    & img {
+      width: 20px;
+    }
+    margin-bottom: var(--s8);
+  }
+}

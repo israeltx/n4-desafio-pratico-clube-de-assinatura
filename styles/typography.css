@@ -95,4 +95,9 @@ label {
   #hero p:nth-of-type(2) {
     font: var(--subtitle);
   }
+  #kit {
+    & p {
+      font: var(--body-md);
+    }
+  }
 }
