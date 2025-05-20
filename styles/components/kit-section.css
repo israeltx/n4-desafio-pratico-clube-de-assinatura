@@ -4,7 +4,7 @@
     justify-content: center;
     gap: var(--s12);
 
-    /*  */
+    /* Stars */
     & img {
       width: 20px;
     }
