@@ -1,0 +1,124 @@
+#kit {
+  position: relative;
+
+  & #book-kit {
+    margin-top: 120px;
+    margin-bottom: 200px;
+
+    & img {
+      position: absolute;
+      z-index: -1;
+    }
+    & img[src*="book.png"] {
+      position: relative;
+      width: 157px;
+      margin: auto;
+      z-index: 0;
+    }
+    & img[src*="bookmark"] {
+      width: 58px;
+      height: 180px;
+    }
+    & p {
+      position: absolute;
+      font-size: var(--fs-10);
+    }
+    /* End of General Styles */
+
+    & .book {
+      position: relative;
+
+      & .arrow-n-text {
+        position: relative;
+        margin-bottom: 20px;
+    
+        & p {
+          top: -30px;
+          left: 10px;
+        }
+        & img {
+          left: 40px;
+          top: -10px;
+        }
+      }
+      
+      & .circle {
+        position: absolute;
+        z-index: -3;
+
+        width: 298px;
+        height: 298px;
+
+        bottom: -40px;
+        left: 30px;
+
+        filter: blur(103px);
+      }
+    }
+    /* End of Book */
+
+    & .yellow-bookmark {
+      position: relative;
+
+      & img {
+        top: -230px;
+        right: 52px;
+        rotate: 12deg;
+      }
+    }
+    /* End of Yellow Bookmark */
+
+    & .purple-bookmark {
+      position: relative;
+
+      & img[src*="bookmark"] {
+        top: -200px;
+        right: 20px;
+        rotate: 22deg;
+        z-index: -2;
+      }
+
+      & .arrow-n-text {
+        position: relative;
+        
+        & img[src*="arrow"] {
+          right: 38px;
+          top:-30px;
+        }
+        & p {
+          right: 30px;
+          bottom: -45px;
+        }
+      }
+    }
+    /* End of Purple Bookmark */
+
+    & .pin {
+      position: relative;
+
+      & .arrow-n-text {
+        position: relative;
+
+        & p {
+          top: -115px;
+          left: 15px;
+        }
+
+        & img {
+          top: -92px;
+          left: 28px;
+        }
+      }
+      
+      & img[src*="pin"] {
+        width: 74px;
+        height: 85px;
+        
+        bottom: -20px;
+        left: 45px;
+        rotate: -8deg;
+      }
+    }
+  }
+  /* End of Book Kit */
+}
