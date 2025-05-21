@@ -1,0 +1,15 @@
+#subscription {
+  & h2 {
+    margin-bottom: var(--s48);
+  }
+
+  & .cards {
+    display: flex;
+    gap: var(--s16);
+
+    & .monthly-card {
+      margin-left: 20px;
+    }
+
+  }
+}
