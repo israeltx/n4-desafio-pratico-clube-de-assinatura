@@ -4,7 +4,8 @@
   & #book-kit {
     margin-top: 120px;
     margin-bottom: 200px;
-
+    
+    /* All images */
     & img {
       position: absolute;
       z-index: -1;
@@ -15,6 +16,7 @@
       margin: auto;
       z-index: 0;
     }
+    /* All bookmarks */
     & img[src*="bookmark"] {
       width: 58px;
       height: 180px;
@@ -41,7 +43,8 @@
           top: -10px;
         }
       }
-      
+
+      /* Glow behind the boook */
       & .circle {
         position: absolute;
         z-index: -3;
@@ -121,4 +124,106 @@
     }
   }
   /* End of Book Kit */
+}
+
+
+
+/* Media Queries */
+@media (width > 375px) {
+  #kit {
+    & #book-kit {
+      margin-top: 222px;
+      margin-bottom: 600px;
+      
+      & img[src*="book.png"] {
+        width: 467px;
+      }
+      /* All bookmarks */
+      & img[src*="bookmark"] {
+        width: 172px;
+        height: 536px;
+      }
+      & p {
+        font-size: var(--fs-16);
+      }
+      /* End of General Styles */
+
+      & .book {
+        & .arrow-n-text {
+          margin-bottom: 20px;
+          & p {
+            top: -55px;
+            left: 255px;
+          }
+          & img {
+            left: 325px;
+            top: -20px;
+          }
+        }
+        
+        /* Glow behind the boook */
+        & .circle {
+          width: 930px;
+          height: 930px;
+
+          bottom: -150px;
+          left: 240px;
+
+          filter: blur(300px);
+        }
+      }
+      /* End of Book */
+
+      & .yellow-bookmark {
+        & img {
+          top: -650px;
+          right: 370px;
+          rotate: 12deg;
+        }
+      }
+      /* End of Yellow Bookmark */
+
+      & .purple-bookmark {
+        & img[src*="bookmark"] {
+          top: -550px;
+          right: 255px;
+          rotate: 20deg;
+        }
+        & .arrow-n-text {       
+          & img[src*="arrow"] {
+            right: 308px;
+            top:-30px;
+          }
+          & p {
+            right: 366px;
+            bottom: -165px;
+          }
+        }
+      }
+      /* End of Purple Bookmark */
+
+      & .pin {
+        & .arrow-n-text {
+          & p {
+            top: -300px;
+            left: 270px;
+          }
+          & img {
+            top: -260px;
+            left: 280px;
+          }
+        }
+        
+        & img[src*="pin"] {
+          width: 222px;
+          height: 254px;
+          
+          bottom: -80px;
+          left: 330px;
+          rotate: -8deg;
+        }
+      }
+    }
+    /* End of Book Kit */
+  }
 }

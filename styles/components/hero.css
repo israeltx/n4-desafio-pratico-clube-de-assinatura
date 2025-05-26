@@ -65,8 +65,8 @@
 }
 
 
-/* Media Queries */
 
+/* Media Queries */
 @media (width > 375px) {
   .background-hero {
     background-size: 1950px;

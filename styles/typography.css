@@ -85,6 +85,9 @@ label {
   letter-spacing: 0.05em;
 }
 
+
+
+/* Media Queries */
 @media (width > 375px) {
   h1 { font: var(--title-lg); }
   h2 { font: var(--title-sm); }

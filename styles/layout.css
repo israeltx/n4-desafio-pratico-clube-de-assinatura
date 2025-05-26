@@ -25,6 +25,9 @@
 .desktop-only { display: none; }
 .mobile-only { display: initial; }
 
+
+
+/* Media Queries */
 @media (width > 375px) {
   .container {
     max-width: 1440px;
