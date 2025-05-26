@@ -13,3 +13,43 @@
 
   }
 }
+
+
+
+/* Media Queries */
+@media (width > 375px) {
+  #subscription {
+    margin-bottom: 345px;
+    & h2 {
+      margin-bottom: 145px;
+    }
+    & .cards {
+      justify-content: center;
+
+      & .monthly-card {
+        margin-left: 0;
+
+        rotate: -8deg;
+        top: 38px;
+        left: 10px;
+      }
+      & .semester-card {
+        z-index: 1;
+      }
+      & .biannual-card {
+        rotate: 8deg;
+        top: 38px;
+        right: 10px;
+        z-index: 0;
+      }      
+    }
+  }
+  & .circle {
+    width: 930px;
+    height: 930px;
+    background-color: var(--shape-base);
+
+    left: 480px;
+    filter: blur(284px);
+  }
+}
