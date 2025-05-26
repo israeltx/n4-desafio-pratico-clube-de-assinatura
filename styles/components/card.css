@@ -1,97 +1,96 @@
 section#subscription {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  background-color: var(--shape-base);
-  padding: var(--s32);
-  border-radius: 24px;
-  position: relative;
-  width: 288px;
-  height: 416px;
-  border: 1px solid var(--shape-stroke);
-  transition: border, background-color 350ms linear;
-
-  &:hover {
-    border: 1px solid transparent;
-    background-color: var(--shape-stroke);
-  }
-
-  & h2, h3 {
-    text-align: left;
-  }
-
-
-  & h2 {
-    font: var(--title-md);
-    margin-top: var(--s24);
-    margin-bottom:  var(--s8);
-  }
-
-}
-
-/* Stars beside the list items */
-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--s8);
-
-  & li {
-    align-self: self-start;
+  
+  & .card {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    background-color: var(--shape-base);
+    padding: var(--s32);
+    border-radius: 24px;
+    position: relative;
+    width: 288px;
+    height: 416px;
+    border: 1px solid var(--shape-stroke);
+    transition: border, background-color 350ms linear;
+  
+    &:hover {
+      border: 1px solid transparent;
+      background-color: var(--shape-stroke);
+    }
+  
+    & h2, h3 {
+      text-align: left;
+    }
+  
+  
+    & h2 {
+      font: var(--title-md);
+      margin-top: var(--s24);
+      margin-bottom:  var(--s8);
+    }
+  
+  }
+  
+  /* Stars beside the list items */
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: var(--s8);
+  
+    & li {
+      align-self: self-start;
+      display: flex;
+      gap: var(--s8);
+    }
+  
+    /* Custom list bullet points */
+    & img {
+      width: 16px;
+      height: 16px;
+    }
   }
-
-  /* Custom list bullet points */
-  & img {
-    width: 16px;
-    height: 16px;
+  
+  .card button { 
+    width: 100%;
+    margin-top: var(--s24); 
   }
-}
-
-.card button { 
-  width: 100%;
-  margin-top: var(--s24); 
-}
-
-/* Semestral top tag */
-.tag-popular {
-  background-color: var(--shape-stroke);
-  padding: var(--s9) var(--s20);
-  border-radius: 999px;
-  position: absolute;
-  right: 24px;
-  top: 24px;
-}
-
-/* Icons above and under the cards */
-.monthly-card, .semester-card, .biannual-card {
-  position: relative;
-}
-
-/* Top Left Corner Stars */
-.monthly-card > img {
-  position: absolute;
-  top: -30px;
-  left: -30px;
-}
-
-/* Bunny */
-.semester-card > img {
-  position: absolute;
-  top: -51px;
-  left: 32px;
-}
-
-/* Bottom Right Corner Stars */
-.biannual-card > img {
-  position: absolute;
-  right: 15px;
+  
+  /* Semestral top tag */
+  .tag-popular {
+    background-color: var(--shape-stroke);
+    padding: var(--s9) var(--s20);
+    border-radius: 999px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+  }
+  
+  /* Icons above and under the cards */
+  .monthly-card, .semester-card, .biannual-card {
+    position: relative;
+  }
+  
+  /* Top Left Corner Stars */
+  .monthly-card > img {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+  }
+  
+  /* Bunny */
+  .semester-card > img {
+    position: absolute;
+    top: -51px;
+    left: 32px;
+  }
+  
+  /* Bottom Right Corner Stars */
+  .biannual-card > img {
+    position: absolute;
+    right: 15px;
+  }
 }
