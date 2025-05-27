@@ -1,8 +1,8 @@
 footer {
   position: relative;
-  height: 415px;
   background-image: url(/assets/images/book-trace-background.png);
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 415px;
 
   /* Logo */
   & img {
@@ -39,3 +39,39 @@ footer {
 
 
 /* Media Queries */
+
+@media (width > 375px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-size: 100% 415px;
+
+    /* Logo */
+    & img {
+      width: 264px;
+      margin-top: 0;
+    }
+    & .line {
+      width: 311px;
+    }
+    
+    & .links {
+      /* display: flex; */
+      gap: var(--s40);
+
+      & .content-links, .help-links {
+        & li {
+          margin-bottom: var(--s16);
+        }
+      }
+    }
+    &.container {
+      padding-top: 80px;
+    }
+    & .social {
+      margin-bottom: 0;
+    }
+  }
+}
