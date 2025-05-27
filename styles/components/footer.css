@@ -1,3 +1,40 @@
+footer {
+  position: relative;
+  height: 415px;
+  background-image: url(/assets/images/book-trace-background.png);
+  background-size: 100% 100%;
+
+  /* Logo */
+  & img {
+    width: 158px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: var(--s12);
+  }
+  & .line {
+    width: 311px;
+    margin: 0 auto var(--s20) auto;
+    border: 1px solid var(--shape-stroke);
+  }
+  
+  & .links {
+    display: flex;
+    gap: var(--s40);
+    
+    & .content-links, .help-links {
+      & li {
+        margin-bottom: var(--s16);
+      }
+    }
+  }
+  &.container {
+    padding: var(--s32);
+  }
+  & .social {
+    position: relative;
+    z-index: 0; 
+  }
+}
 
 
 

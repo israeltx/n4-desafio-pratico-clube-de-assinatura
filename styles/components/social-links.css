@@ -1,38 +1,39 @@
-.social ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--s24);
+.social {
+  margin-bottom: var(--s40);
+  & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--s32);
 
-  & li { position: relative; }
-}
-
-
-
-.social svg {
-  fill: var(--blue-light);
-  &:hover {
-    path { fill: var(--text-body); };
-  }
-}
-
-
-.social li::before {
-  content: "";
-  width: var(--s40);
-  height: var(--s40);
-  border-radius: 50%;
-  background-color: var(--shape-stroke);
-  z-index: -1;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  scale: 0;
-}
-
-.social li:hover {
-  &::before {
-    scale: 1;
+    & li { 
+      position: relative;
+      & a {
+        & svg {
+          fill: var(--blue-light);
+          &:hover {
+            path { fill: var(--text-body); };
+          }
+        }
+      }
+      &::before {
+        content: "";
+        width: var(--s40);
+        height: var(--s40);
+        border-radius: 50%;
+        background-color: var(--shape-stroke);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        scale: 0;
+        z-index: -1;
+      }
+      &:hover {
+        &::before {
+          scale: 1;
+       }
+      }
+    }
   }
 }

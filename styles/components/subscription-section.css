@@ -1,4 +1,5 @@
 #subscription {
+  margin-bottom: 104px;
   & h2 {
     margin-bottom: var(--s48);
   }
