@@ -1,19 +1,45 @@
 button {
+  position: relative;
   padding: var(--s12) var(--s20);
   border-radius: 0.5rem;
   border: none;
   color: var(--text-title);
-}
-.btn-primary {
-  background-color: var(--pink-dark);
-  &:hover {
-    background-color: var(--pink-base);
-  }
-}
-.btn-secondary {
-  background-color: var(--blue-dark);
-  &:hover {
-    background-color: var(--blue-mid);
-  }
-}
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 0;
 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.7s ease, width 0.7s ease, height 0.7s ease;
+    z-index: -1;    
+  }
+  &.btn-primary {
+    background-color: var(--pink-dark);
+    &::before {
+      background-color: var(--pink-base);
+    }
+    &:hover::before {
+      width: 200%;
+      height: 200%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  &.btn-secondary {
+    background-color: var(--blue-dark);
+    &::before {
+      background-color: var(--blue-mid);
+    }
+    &:hover::before {
+      width: 200%;
+      height: 200%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
