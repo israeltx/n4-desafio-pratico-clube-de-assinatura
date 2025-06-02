@@ -88,14 +88,14 @@
       transition: transform 500ms;
     }
 
-    &:hover img:hover {
-      transform: scale(1.15) rotate(15deg);
-    }
-
     &:hover {
       img {
-        transform: scale(1) ;
+        transform: scale(1);
+        &:hover {
+          transform: scale(1.15) rotate(15deg);
+        }
       }
+      
     }
 
     & header {
